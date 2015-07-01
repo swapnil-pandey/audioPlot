@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Audio Plot</title>
+
+         <!-- Bootstrap -->
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="res/css/style.css" />
+       
+        <!-- wavesurfer.js -->
+        <script src="src/wavesurfer.js"></script>
+        <script src="src/util.js"></script>
+        <script src="src/webaudio.js"></script>
+        <script src="src/mediaelement.js"></script>
+        <script src="src/drawer.js"></script>
+        <script src="src/drawer.canvas.js"></script>
+
+        <!-- regions plugin -->
+        <script src="plugin/wavesurfer.regions.js"></script>
+
+        <!-- Demo -->
+        <script src="res/main.js"></script>
+        <script src="res/trivia.js"></script>
+    </head>
+
+    <body itemscope itemtype="http://schema.org/WebApplication">
+        <div class="container">
+            
+
+            <div id="demo">
+                <div id="waveform">
+                    <div class="progress progress-striped active" id="progress-bar">
+                        <div class="progress-bar progress-bar-info"></div>
+                    </div>
+
+                    <!-- Here be the waveform -->
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-primary" data-action="back">
+                        <i class="glyphicon glyphicon-step-backward"></i>
+                        Backward
+                    </button>
+
+                    <button class="btn btn-primary" data-action="play">
+                        <i class="glyphicon glyphicon-play"></i>
+                        Play
+                        /
+                        <i class="glyphicon glyphicon-pause"></i>
+                        Pause
+                    </button>
+
+                    <button class="btn btn-primary" data-action="forth">
+                        <i class="glyphicon glyphicon-step-forward"></i>
+                        Forward
+                    </button>
+
+                    <button class="btn btn-primary" data-action="toggle-mute">
+                        <i class="glyphicon glyphicon-volume-off"></i>
+                        Toggle Mute
+                    </button>
+                </div>
+            </div>
+
+            <p> <div class="lead pull-center" id="drop">
+                Drag'n' drop your audio file here!
+            </div> </p>
+
+            
+
+            
+            
+        </div>
+
+        
+
+        
+    </body>
+</html>

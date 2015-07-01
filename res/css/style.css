@@ -1,0 +1,53 @@
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Customize container */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.controls {
+    padding: 30px 0 15px;
+    text-align: center;
+}
+
+.controls .btn {
+    margin-bottom: 15px;
+}
+
+
+.lead {
+    text-align: center;
+    padding: 20px;
+}
+
+#waveform {
+    position: relative;
+}
+
+#progress-bar {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-top: -10px;
+    left: 5%;
+    width: 90%;
+}
+
+#drop {
+    border: 3px dashed #ddd;
+    padding: 30px;
+}
+
+#drop.wavesurfer-dragover {
+    border-color: #333;
+}
